@@ -9,7 +9,7 @@
 #X obj 407 346 outlet~;
 #X obj 105 210 r room;
 #X obj 294 199 iempluginOSC;
-#N canvas 298 27 1565 950 abeja 1;
+#N canvas 298 27 1565 950 abeja 0;
 #X text 186 28 abeja;
 #X obj 27 25 loadbang;
 #X obj 27 50 f \$1;
@@ -209,6 +209,8 @@
 #X connect 67 0 65 0;
 #X restore 185 104 pd abeja;
 #X msg 297 140 /RoomEncoder/sourceX \$1 \, /RoomEncoder/sourceY \$2 \, /RoomEncoder/sourceZ \$3, f 24;
+#X obj 710 57 r bee-switch;
+#X obj 206 50 r bees;
 #X connect 0 0 10 0;
 #X connect 1 0 2 0;
 #X connect 3 0 4 0;
@@ -220,3 +222,5 @@
 #X connect 10 0 3 0;
 #X connect 10 1 11 0;
 #X connect 11 0 9 0;
+#X connect 12 0 2 0;
+#X connect 13 0 10 0;
