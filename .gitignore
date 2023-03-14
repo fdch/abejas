@@ -2,3 +2,4 @@
 *.reapeaks
 .venv/
 application/
+*.swp
